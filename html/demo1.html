@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="app">
+			<p>欢迎来到{{message}},今天很开心，和{{trikey}}一起上课,{{trikeys()}}</p>
+		</div>
+		<script type="text/javascript">
+			var vu=new Vue({
+				el:'#app',
+				data:{
+					message:'L507',
+					trikey:'苏芳瑶'
+				},
+				methods:{
+					trikeys:function(){
+						return this.trikey+"太棒啦";
+					}
+				}			
+			})
+			//页面输出
+			document.write("hahahha ")
+		</script>
+	</body>
+</html>
